@@ -6,119 +6,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    body {
+    * {
       margin: 0;
-      min-height: 100vh;
+      padding: 0;
+      box-sizing: border-box;
       font-family: Arial, Helvetica, sans-serif;
-      color: white;
+    }
 
-      /* BACKGROUND IMAGE */
+    body {
+      min-height: 100vh;
       background: 
         linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-        url("football-bg.jpg");
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-    }
-
-    .content {
-      min-height: 100vh;
+        url("football-bg.jpg") no-repeat center center/cover;
+      color: #ffffff;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      padding: 40px 20px;
+      padding: 20px;
     }
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-      letter-spacing: 2px;
-    }
-
-    .tagline {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      opacity: 0.9;
-    }
-
-    .contact {
+    .card {
       background: rgba(0, 0, 0, 0.55);
-      padding: 30px;
+      padding: 35px;
       border-radius: 18px;
       max-width: 520px;
       width: 100%;
-      text-align: left;
+      box-shadow: 0 0 30px rgba(0,0,0,0.6);
     }
 
-    .contact h2 {
+    h1 {
       text-align: center;
-      margin-bottom: 20px;
-      font-size: 1.7rem;
+      margin-bottom: 25px;
+      letter-spacing: 1px;
     }
 
-    .contact p {
-      margin: 10px 0;
-      font-size: 1rem;
+    .item {
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+      line-height: 1.5;
     }
 
-    .contact a {
+    .label {
+      font-weight: bold;
+      color: #00ffcc;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    a {
       color: #00ffcc;
       text-decoration: none;
       font-weight: bold;
     }
 
-    .contact a:hover {
+    a:hover {
       text-decoration: underline;
     }
 
+    .social a {
+      display: block;
+      margin-top: 6px;
+    }
+
     footer {
-      margin-top: 30px;
-      font-size: 0.9rem;
-      opacity: 0.8;
       text-align: center;
+      margin-top: 25px;
+      font-size: 0.9rem;
+      opacity: 0.85;
     }
   </style>
 </head>
 
 <body>
-  <div class="content">
-    <h1>Frenz Circuit GDT Football Club</h1>
-    <div class="tagline">⚽ The Pink Roses – Passion • Unity • Football</div>
 
-    <div class="contact">
-      <h2>Contact Information</h2>
+  <div class="card">
+    <h1>Contact Information</h1>
 
-      <p><strong>📍 Address:</strong><br>
-        1 North Bridge Road #08-08<br>
-        High Street Centre<br>
-        Singapore 179094
-      </p>
+    <!-- NAME -->
+    <div class="item">
+      <span class="label">Contact Person</span>
+      Zamri Abdullah
+    </div>
 
-      <p><strong>👤 Contact Person:</strong><br>
-        Zamri Abdullah
-      </p>
+    <!-- WHATSAPP -->
+    <div class="item">
+      <span class="label">WhatsApp</span>
+      <a href="https://wa.me/6587422630">+65 8742 2630</a>
+    </div>
 
-      <p><strong>📞 WhatsApp:</strong><br>
-        <a href="https://wa.me/6587422630" target="_blank">+65 8742 2630</a>
-      </p>
+    <!-- EMAIL -->
+    <div class="item">
+      <span class="label">Email</span>
+      <a href="mailto:gdt.singapore@gmail.com">gdt.singapore@gmail.com</a>
+    </div>
 
-      <p><strong>📧 Email:</strong><br>
-        <a href="mailto:gdt.singapore@gmail.com">gdt.singapore@gmail.com</a>
-      </p>
+    <!-- ADDRESS -->
+    <div class="item">
+      <span class="label">Address</span>
+      1 North Bridge Road #08-08<br>
+      High Street Centre<br>
+      Singapore 179094
+    </div>
 
-      <p><strong>🌐 Social Media:</strong><br>
-        <a href="https://www.facebook.com/GDTCFCThePinkRoses" target="_blank">Facebook</a><br>
-        <a href="https://www.instagram.com/gdtc_fc" target="_blank">Instagram</a><br>
-        <a href="https://www.tiktok.com/@gdtc_fc" target="_blank">TikTok</a>
-      </p>
+    <!-- SOCIAL MEDIA -->
+    <div class="item social">
+      <span class="label">Social Media</span>
+      <a href="https://www.facebook.com/GDTCFCThePinkRoses" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/gdtc_fc" target="_blank">Instagram</a>
+      <a href="https://www.tiktok.com/@gdtc_fc" target="_blank">TikTok</a>
     </div>
 
     <footer>
       © 2026 Frenz Circuit GDT Football Club
     </footer>
   </div>
+
 </body>
 </html>
-
