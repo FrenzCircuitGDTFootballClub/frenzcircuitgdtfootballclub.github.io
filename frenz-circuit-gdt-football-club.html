@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Frenz Circuit GDT Football Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+
+    /* Flying footballs */
+    .football {
+      position: absolute;
+      font-size: 2.5rem;
+      animation: fly linear infinite;
+      opacity: 0.7;
+      z-index: 1;
+    }
+
+    @keyframes fly {
+      from {
+        transform: translateX(-10vw) rotate(0deg);
+      }
+      to {
+        transform: translateX(110vw) rotate(360deg);
+      }
+    }
+
+    .football:nth-child(1) { top: 10%; animation-duration: 12s; }
+    .football:nth-child(2) { top: 30%; animation-duration: 9s; }
+    .football:nth-child(3) { top: 55%; animation-duration: 14s; }
+    .football:nth-child(4) { top: 75%; animation-duration: 11s; }
+
+    /* Main content */
+    .content {
+      position: relative;
+      z-index: 2;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      opacity: 0.9;
+    }
+
+    .contact {
+      background: rgba(0, 0, 0, 0.35);
+      padding: 25px 30px;
+      border-radius: 15px;
+      max-width: 420px;
+      width: 100%;
+    }
+
+    .contact h2 {
+      margin-bottom: 15px;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .contact a {
+      display: block;
+      margin: 8px 0;
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Flying footballs -->
+  <div class="football">⚽</div>
+  <div class="football">⚽</div>
+  <div class="football">⚽</div>
+  <div class="football">⚽</div>
+
+  <!-- Main content -->
+  <div class="content">
+    <h1>Frenz Circuit GDT Football Club</h1>
+    <div class="tagline">Official Club Website</div>
+
+    <div class="contact">
+      <h2>Contact Us</h2>
+
+      <p><strong>Contact Person:</strong><br> Zamri Abdullah</p>
+      <p><strong>WhatsApp:</strong><br> +65 8742 2630</p>
+      <p><strong>Email:</strong><br> gdt.singapore@gmail.com</p>
+
+      <a href="https://www.facebook.com/GDTCFCThePinkRoses" target="_blank">
+        Facebook
+      </a>
+
+      <a href="https://www.instagram.com/gdtc_fc/" target="_blank">
+        Instagram
+      </a>
+
+      <a href="https://www.tiktok.com/@gdtc_fc" target="_blank">
+        TikTok
+      </a>
+
+      <a href="https://wa.me/6587422630" target="_blank">
+        Chat on WhatsApp
+      </a>
+    </div>
+
+    <footer>
+      © 2026 Frenz Circuit GDT Football Club
+    </footer>
+  </div>
+
+</body>
+</html>
